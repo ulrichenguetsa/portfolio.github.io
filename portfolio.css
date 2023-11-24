@@ -1,0 +1,370 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* this is for styling the header section */
+
+header{
+    width: 94%;
+    padding: 0 3%;
+    height:50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    position: absolute;
+    top: 0;
+    z-index:100 ;
+}
+
+header .header-left a{
+    text-decoration: none;
+    color: #4c8;
+    font-weight: 900;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+header .header-right .login{
+    padding: 7.5px 12px;
+    border-radius: 20px;
+    border: 3px solid #4c8;
+    font-size: 1rem;
+    color: #4c8;
+    background-color:transparent;
+}
+header .header-right .login:hover{
+    background-color:#4c8;
+    border: 4px solid #4c8;
+    color: white;
+}
+header .header-right .sign-up{
+    padding: 6px;
+    border-radius: 15px;
+    font-size: 1rem;
+    color:white;
+    border: 0;
+    background-color:#f1dc4f;
+}
+header .header-right .sign-up:hover{
+    border: 3px solid #f1dc4f;
+    color: white;
+}
+
+/* this is for styling the naviagation */
+
+nav{
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    z-index:100 ;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav li a {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    white-space: nowrap; 
+}
+nav li:hover a{
+	background-color:rgba(64,200,130,0.1) ;
+	border-top: 5px solid #4c8;
+	padding: 0.675rem 2.5rem 1rem 2.5rem;
+}
+/*this is for the first section*/
+
+section.home{
+    background-image: url("images/pexels-photo-8508158.jpeg");
+    height: 100vh;
+    background-size: cover ;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    z-index:10 ;
+}
+.welcome-text{
+    margin: 0 auto;
+    width: 70%;
+    padding-top: 15vh;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.welcome-text h1,h2{
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.welcome-text h1{
+    font-size: 2rem;   
+}
+span{
+    color: #f1dc4f;
+}
+.welcome-text button{
+    font-weight: bold;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    padding: 10px;
+    margin:2rem 0;
+    border:4px solid #4c8;
+    color:#4c8;
+    background-color: transparent;
+}
+.welcome-text button:hover{
+    background-color: #4c8;
+    border: 5px solid #f1dc4f;
+    color: white;
+}
+
+/*this is for the second section*/
+
+.about-us{
+    width: 100%;
+    padding:10vh 0 5vh 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: Rgba(128,128,128,0.1);
+
+}
+.about-us img{
+    display: block;
+    width:25%; 
+}
+.about-us h2{
+    color:#4c8;
+}
+
+/*this is for the third section*/
+
+.experience{
+    padding: 5% 10%;
+    width: 80%;
+    background-color: powderblue;
+}
+section .web-developer,.rating{
+    display: flex;
+}
+section .front-end,.competence{
+    width: 50%;
+}
+section.experience  h4{
+    font-size:1.2rem;
+}
+section .back-end,.level{
+    width: 50%;
+}
+.experience h2{
+    color:rgba(64,200,130,1);
+    font-size: 1.8rem;
+}
+.experience h3,h4{
+    font-weight: bold;
+    text-align: center;
+    padding: 1.5rem 0;
+    color: white;
+}
+.experience h3{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+span.pointer{
+    color: #4c8;
+}
+.experience h5,p{
+    padding: 0.5rem 0;
+    text-align: center;
+    font-weight: bold;
+}
+.experience h5{
+    font-size: 1.1rem;
+}
+.experience .competence p{
+    color: white;
+}
+.experience .level p{
+    color: #f1dc4f;
+}
+
+/*this is for the fourth section*/
+
+section.our-catalogue{
+    background-color: #888;
+    padding: 5vh 0;
+}
+section.our-catalogue h3{
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: bold;
+    padding: 3vh 0;
+}
+
+.grid{
+    max-width: 1300px;
+    width: 98%;
+    margin: 0 auto;
+    height: auto;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns:repeat(auto-fill,290px);
+    justify-content: center;
+}
+.grid-item{
+    width: 290px;
+    height: 210px;
+    border: 1px solid #f1f1f1;
+}
+.grid-item img{
+    display: block;
+    width: inherit;
+    height: inherit;
+}
+
+/*this is for the fifth section*/
+
+.contact-us{
+    padding: 10vh 0;
+    width: 100%;
+    background:linear-gradient(to right,aquamarine,powderblue,aqua)
+}
+form{
+    width:80%;
+    margin: 0 auto;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: inset -2px -2px 2px darkcyan;
+    padding: 5vh 0;
+}
+.contact-form{
+    max-width: 1000px;
+    width: 98%;
+    margin: 0 auto;
+    height: auto;
+    display: grid;
+    grid-gap: 10px;
+    
+    grid-template-columns:repeat(auto-fill,380px);
+    justify-content: center;
+    padding: 5vh 0;
+
+}
+
+form .grid-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 380px;
+}
+.contact-us button{
+    display: block;
+    border-radius: 10px;
+    border: 0;
+    padding: 10px; 
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    background-color:rgba(64,200,130,0.8);
+    width: 100px;
+    margin: 0 auto;
+}
+form label{
+    color: #333;
+    width: 20%;
+}
+form input,textarea{
+    box-shadow: none;
+    border:1px solid #4c8;
+    width: 70%;
+    height: 40px;
+}
+
+/*this is for the footer*/
+footer p{
+    color: rgb(80, 75, 75);
+}
+footer h3{
+    color: #4c8;
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+
+}
+footer span{
+    color: #f00;
+    font-size: 5rem;
+
+}
+
+/*this is for responsiveness */
+@media screen and (max-width:480px) {
+
+    /*this is for the header ,nav and about section for phone*/
+    header,nav,.home{
+        position: static;
+    }
+    nav ul{
+        background-color: hsl(0, 0%, 10%);
+        overflow-x: scroll;
+        justify-content: start;
+    } 
+    nav li a{            
+        padding: 0.625rem ;
+        font-size: 0.9rem; 
+    }
+    nav li:hover a{
+	background-color:#222;
+	border-top: 0;
+	padding: 0.625rem ;
+    }
+    .home .welcome-text{
+        margin: 0 auto;
+        width: 90%;
+    }  
+
+    /*this is for the experience section */
+    .web-developer{
+        flex-wrap: wrap;
+    }
+    .web-developer .front-end,.rating{
+       width: 100%;
+    }
+    .web-developer .back-end{
+        width: 100%;
+        justify-content: center;
+    }
+    span.Adobe{
+        display: none;
+    }
+
+    /*this is for the form*/
+    form{
+        width: 85%;
+        padding: 2.5vh 0;
+    }
+    .contact-form{
+        width: 100%;
+        grid-template-columns: auto
+    }
+    .contact-form .grid-item{
+        width: 250px;
+    }
+
+    /*this for the footer*/
+    footer h3,.love{
+        font-size: 2.2rem;
+    }
+}
